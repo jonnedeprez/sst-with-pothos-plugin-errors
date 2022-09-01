@@ -1,0 +1,26 @@
+type Article {
+  id: ID!
+  title: String!
+  url: String!
+}
+
+type BaseError implements Error {
+  message: String!
+}
+
+interface Error {
+  message: String!
+}
+
+type LengthError implements Error {
+  message: String!
+  minLength: Int!
+}
+
+type Mutation {
+  createArticle(title: String!, url: String!): Article!
+}
+
+type Query {
+  getArticle(id: String!): Article!
+}

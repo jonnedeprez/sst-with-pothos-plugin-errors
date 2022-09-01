@@ -1,0 +1,5 @@
+dist
+cdk.out
+graphql
+web-react
+web/src/vite-env.d.ts

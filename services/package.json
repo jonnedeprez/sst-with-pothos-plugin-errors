@@ -1,0 +1,19 @@
+{
+  "name": "@test-sst/services",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.162.0",
+    "@pothos/core": "^3.19.0",
+    "@pothos/plugin-errors": "3.6.0",
+    "@serverless-stack/node": "^1.10.5",
+    "aws-sdk": "^2.1207.0",
+    "electrodb": "^1.11.1",
+    "graphql": "^16.6.0",
+    "ulid": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.102"
+  }
+}

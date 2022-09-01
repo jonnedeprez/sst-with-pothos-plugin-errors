@@ -1,0 +1,32 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0,
+    "no-console": 0,
+    "prettier/prettier": ["error", { "singleQuote": true, "semi": true }],
+    "curly": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.js"]
+    },
+    {
+      "files": ["*.spec.ts"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": 0
+      }
+    }
+  ]
+}
